@@ -754,7 +754,82 @@
         // Remove active class from all tag
         tagItems.forEach(tag => tag.classList.remove('active'));
 
-        // Add active class to tag 
+                // Add active class to tag 
         e.target.classList.add('active');
 
         const tag = e.target.dataset.tag;
+        searchInput.value = '';
+
+        if (tag === 'all') {
+          filteredArticles = Array.from(articles);
+        } else {
+          filteredArticles = Array.from(articles).filter(article => 
+            article.classList.contains(tag)
+          );
+        }
+
+        currentArticleIndex = 0;
+        showArticle(currentArticleIndex);
+      });
+    });
+  }
+
+  function updateNavigation() {
+    prevBtn.classList.toggle('disabled', currentArticleIndex === 0);
+    nextBtn.classList.toggle('disabled', currentArticleIndex === filteredArticles.length - 1);
+  }
+
+  function showArticle(index) {
+    articles.forEach(article => article.style.display = 'none');
+    dividers.forEach(divider => divider.style.display = 'none');
+
+    if (filteredArticles.length > 0) {
+      filteredArticles[index].style.display = 'block';
+      const dividerAfter = filteredArticles[index].nextElementSibling;
+      if (dividerAfter && dividerAfter.classList.contains('divider')) {
+        dividerAfter.style.display = 'block';
+      }
+    }
+    updateNavigation();
+  }
+
+  function filterAndDisplayArticles(query) {
+    filteredArticles = Array.from(articles).filter(article => {
+      const title = article.querySelector('.article-title').textContent.toLowerCase();
+      const body = article.querySelector('.article-body').textContent.toLowerCase();
+      const tags = article.className.toLowerCase();
+      return title.includes(query) || body.includes(query) || tags.includes(query);
+    });
+
+    currentArticleIndex = 0;
+    showArticle(currentArticleIndex);
+  }
+
+  prevBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (currentArticleIndex > 0) {
+      currentArticleIndex--;
+      showArticle(currentArticleIndex);
+    }
+  });
+
+  nextBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (currentArticleIndex < filteredArticles.length - 1) {
+      currentArticleIndex++;
+      showArticle(currentArticleIndex);
+    }
+  });
+
+  searchInput.addEventListener('input', (e) => {
+    const query = e.target.value.toLowerCase();
+    filterAndDisplayArticles(query);
+  });
+
+  // Generate tags dynamically
+  generateTags();
+
+  showArticle(currentArticleIndex);
+</script>
+</body>
+</html>
