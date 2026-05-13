@@ -417,3 +417,344 @@
     background-color: #2a2a2a;
     color: #bbb;
   }
+
+  /* Desktop View */
+  @media (min-width: 601px) {
+    .tag-and-search-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .search-container {
+        width: auto;
+        margin-right: 20px;
+        margin-bottom: 0;
+        flex-grow: 1;
+        max-width: 300px;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .tag-navigation {
+        justify-content: flex-start;
+        max-width: calc(100% - 320px);
+        min-width: 400px;
+    }
+  }
+
+  /* Mobile View */
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+      padding-top: 75px;
+    }
+
+    .floating-header {
+      top: 10px;
+      width: calc(100% - 20px);
+      padding: 12px 20px;
+    }
+
+    .typing-container {
+      font-size: 1.2rem;
+    }
+
+    .toggle-icon {
+      width: 38px;
+      height: 38px;
+      margin-left: 10px;
+    }
+
+    .toggle-icon::before {
+      width: 16px;
+      height: 16px;
+    }
+
+    .article-title {
+      font-size: 1.3rem;
+    }
+
+    .article-body {
+      font-size: 1.05rem;
+      text-align: justify;
+    }
+
+    .divider {
+      margin: 10px 0;
+    }
+
+    .nav-link {
+      font-size: 0.9rem;
+    }
+
+    .tag-item {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+        height: 40px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+
+    .tag-navigation {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .search-container {
+      margin-bottom: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="floating-header">
+  <div class="header-left">
+    <div class="typing-container" id="text"></div>
+    <div class="cursor"></div>
+  </div>
+  <div class="toggle-icon" id="toggleIcon"></div>
+</div>
+<div class="main-container">
+  <div class="header-content">
+    <section class="article-section">
+      <div class="article-item pohon-raksasa sequoia">
+        <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=600&h=400&fit=crop" alt="Pohon Sequoia raksasa menjulang tinggi" class="article-image">
+        <h2 class="article-title">Pohon Sequoia: Raksasa Hutan yang Menjulang ke Langit</h2>
+        <div class="article-meta">
+          <span class="article-date">📅 20 Oktober 2025</span>
+          <div class="article-tags">
+            <span class="article-tag">Pohon Raksasa</span>
+            <span class="article-tag">Sequoia</span>
+          </div>
+        </div>
+        <p class="article-body">Pohon Sequoia atau Sequoiadendron giganteum adalah salah satu makhluk hidup paling megah di planet ini. Dengan tinggi yang bisa mencapai lebih dari 80 meter dan diameter batang hingga 11 meter, pohon ini adalah testimoni hidup dari kekuatan dan ketahanan alam. Sequoia yang paling terkenal, bernama General Sherman, memiliki volume batang sekitar 1.487 meter kubik, menjadikannya pohon terbesar di dunia berdasarkan volume. Pohon-pohon ini hanya tumbuh secara alami di lereng barat Sierra Nevada, California, di ketinggian 1.400 hingga 2.150 meter di atas permukaan laut.</p>
+        <p class="article-body">Usia pohon Sequoia bisa mencapai 3.000 tahun, menjadikannya salah satu organisme hidup tertua di Bumi. Kulit kayu mereka yang tebal, mencapai 60 sentimeter, mengandung tanin yang melindungi dari api, serangga, dan penyakit. Bahkan ketika terkena kebakaran hutan, Sequoia sering kali bertahan dan terus tumbuh. Faktanya, api justru membantu regenerasi mereka—panas membuka kerucut biji dan membersihkan lantai hutan dari vegetasi yang bersaing, memberikan ruang bagi bibit muda untuk tumbuh.</p>
+        <p class="article-body">Ekosistem di sekitar Sequoia sangat kaya. Cabang-cabang besar mereka menjadi rumah bagi berbagai spesies burung, tupai, dan bahkan salamander. Akar mereka yang luas, meski tidak dalam, menyebar hingga satu hektar, menyerap air dan nutrisi dari tanah. Menariknya, akar Sequoia sering kali saling terkait dengan pohon lain di sekitarnya, membentuk jaringan yang memberikan stabilitas kolektif terhadap angin kencang dan badai. Sistem ini juga memfasilitasi pertukaran nutrisi dan air antar pohon, sebuah fenomena yang disebut "wood wide web".</p>
+        <p class="article-body">Sayangnya, habitat alami Sequoia terancam oleh perubahan iklim, kebakaran yang lebih intens, dan kekeringan berkepanjangan. Upaya konservasi sedang dilakukan untuk melindungi hutan-hutan ini, termasuk Sequoia National Park yang didirikan pada tahun 1890. Para ilmuwan juga mempelajari bagaimana pohon-pohon ini beradaptasi dengan kondisi ekstrem, berharap dapat menerapkan pelajaran tersebut dalam upaya reboisasi global. Mengunjungi hutan Sequoia adalah pengalaman spiritual—berdiri di bawah raksasa-raksasa ini mengingatkan kita akan kerapuhan dan keagungan kehidupan di Bumi.</p>
+      </div>
+
+      <hr class="divider">
+
+      <div class="article-item pohon-raksasa sequoia">
+        <img src="https://images.unsplash.com/photo-1511497584788-876760111969?w=600&h=400&fit=crop" alt="Hutan Sequoia dengan cahaya matahari menembus dedaunan" class="article-image">
+        <h2 class="article-title">Kehidupan di Bawah Naungan Sequoia: Ekosistem Hutan yang Unik</h2>
+        <div class="article-meta">
+          <span class="article-date">📅 19 Oktober 2025</span>
+          <div class="article-tags">
+            <span class="article-tag">Pohon Raksasa</span>
+            <span class="article-tag">Sequoia</span>
+          </div>
+        </div>
+        <p class="article-body">Hutan Sequoia bukan hanya kumpulan pohon raksasa, tetapi ekosistem kompleks yang menampung ribuan spesies. Kanopi yang tinggi menciptakan iklim mikro yang unik—lebih lembap, lebih sejuk, dan dengan pencahayaan yang terdifusi. Di lantai hutan, lapisan humus tebal dari jarum pinus, kerucut, dan ranting yang terdekomposisi menjadi tanah subur yang kaya akan nutrisi. Tanaman seperti dogwood, azalea, dan berbagai jenis pakis tumbuh subur di bawah naungan raksasa-raksasa ini.</p>
+        <p class="article-body">Fauna yang mendiami hutan Sequoia sangat beragam. Burung pelatuk acorn menggunakan batang pohon sebagai lumbung alami, mengebor lubang-lubang kecil untuk menyimpan ribuan biji ek. Beruang hitam sering terlihat mencari buah berry dan kacang-kacangan, sementara singa gunung berkeliaran di wilayah yang lebih terpencil. Tupai Douglas dengan lincah melompat dari cabang ke cabang, memainkan peran penting dalam penyebaran biji. Bahkan salamander raksasa Pacific ditemukan di sungai-sungai kecil yang mengalir melalui hutan ini.</p>
+        <p class="article-body">Siklus hidup Sequoia dimulai dari biji kecil seukuran serpihan gandum. Untuk berkecambah, biji ini membutuhkan kondisi yang tepat: tanah mineral yang terbuka, kelembapan yang cukup, dan cahaya matahari langsung. Kebakaran alami memainkan peran vital dalam proses ini. Api rendah intensitas membersihkan semak belukar, melepaskan mineral ke tanah, dan membuka kerucut yang melepaskan biji. Tanpa api, hutan Sequoia akan dipenuhi oleh vegetasi yang lebat, mencegah regenerasi alami.</p>
+        <p class="article-body">Namun, manajemen api yang salah selama abad ke-20—di mana semua kebakaran dipadamkan—telah menyebabkan akumulasi bahan bakar di lantai hutan. Ketika api akhirnya terjadi, intensitasnya jauh lebih tinggi, merusak bahkan pohon Sequoia dewasa yang biasanya tahan api. Program pembakaran terkontrol kini dilakukan untuk mengembalikan keseimbangan alami. Melalui pemahaman yang lebih baik tentang dinamika ekosistem ini, kita dapat memastikan bahwa hutan Sequoia akan terus berdiri megah untuk generasi mendatang, menjadi saksi bisu perjalanan waktu dan perubahan iklim.</p>
+      </div>
+
+      <hr class="divider" style="display: none;">
+
+      <div class="article-item bunga-sakura">
+        <img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?w=600&h=400&fit=crop" alt="Bunga sakura mekar di musim semi" class="article-image">
+        <h2 class="article-title">Bunga Sakura: Simbol Keindahan yang Fana</h2>
+        <div class="article-meta">
+          <span class="article-date">📅 18 Oktober 2025</span>
+          <div class="article-tags">
+            <span class="article-tag">Bunga Sakura</span>
+          </div>
+        </div>
+        <p class="article-body">Bunga sakura atau cherry blossom adalah salah satu fenomena alam paling dinanti di Jepang dan berbagai belahan dunia. Mekar hanya selama satu hingga dua minggu setiap musim semi, bunga berwarna merah muda pucat hingga putih ini melambangkan keindahan yang fana dan sifat sementara kehidupan. Tradisi hanami—melihat bunga sakura—telah menjadi bagian integral dari budaya Jepang selama berabad-abad, di mana keluarga dan teman berkumpul di bawah pohon-pohon sakura untuk piknik dan merayakan kedatangan musim semi. Bunga sakura mengajarkan filosofi mono no aware, kesadaran akan ketidakkekalan segala sesuatu, yang mendorong kita untuk menghargai setiap momen indah dalam hidup.</p>
+      </div>
+
+      <hr class="divider" style="display: none;">
+
+      <div class="article-item kaktus-gurun">
+        <img src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=600&h=400&fit=crop" alt="Kaktus tumbuh di gurun pasir" class="article-image">
+        <h2 class="article-title">Kaktus: Pejuang Tangguh di Gurun yang Gersang</h2>
+        <div class="article-meta">
+          <span class="article-date">📅 17 Oktober 2025</span>
+          <div class="article-tags">
+            <span class="article-tag">Kaktus Gurun</span>
+          </div>
+        </div>
+        <p class="article-body">Kaktus adalah master adaptasi yang telah berevolusi untuk bertahan hidup di lingkungan paling keras di planet ini. Dengan batang yang tebal dan berdaging, kaktus menyimpan air dalam jumlah besar untuk menghadapi bulan-bulan kekeringan. Duri-duri tajam yang menutupi permukaan mereka bukan hanya untuk perlindungan dari hewan herbivora, tetapi juga berfungsi mengurangi kehilangan air dengan menciptakan lapisan udara lembap di sekitar tanaman. Akar kaktus menyebar luas dan dangkal, memungkinkan mereka menyerap air hujan dengan cepat sebelum menguap. Beberapa spesies seperti Saguaro dapat hidup hingga 200 tahun dan tumbuh setinggi 12 meter, menjadi landmark ikonik di gurun Amerika Barat.</p>
+      </div>
+
+     <hr class="divider" style="display: none;">
+
+      <div class="article-item bambu-asia">
+        <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=600&h=400&fit=crop" alt="Hutan bambu hijau yang rimbun" class="article-image">
+        <h2 class="article-title">Bambu: Tanaman Serba Guna dengan Pertumbuhan Super Cepat</h2>
+        <div class="article-meta">
+          <span class="article-date">📅 16 Oktober 2025</span>
+          <div class="article-tags">
+            <span class="article-tag">Bambu Asia</span>
+          </div>
+        </div>
+        <p class="article-body">Bambu adalah salah satu tanaman dengan pertumbuhan tercepat di dunia—beberapa spesies dapat tumbuh hingga 91 sentimeter dalam sehari. Tanaman ini memiliki lebih dari 1.400 spesies yang tersebar di berbagai benua, terutama di Asia. Bambu memiliki kekuatan tarik yang melebihi baja, menjadikannya material konstruksi yang ideal dan ramah lingkungan. Di samping itu, bambu juga digunakan untuk membuat kertas, tekstil, furnitur, dan bahkan instrumen musik. Ekosistem bambu sangat penting bagi panda raksasa di China, yang diet mereka hampir sepenuhnya terdiri dari bambu. Hutan bambu juga berperan dalam mencegah erosi tanah dan menyerap karbon dioksida lebih efisien daripada banyak pohon lain.</p>
+      </div>
+
+     <hr class="divider" style="display: none;">
+
+      <div class="article-item mangrove-pesisir">
+        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop" alt="Hutan mangrove dengan akar-akar yang unik" class="article-image">
+        <h2 class="article-title">Mangrove: Penjaga Garis Pantai dan Nursery Laut</h2>
+        <div class="article-meta">
+          <span class="article-date">📅 15 Oktober 2025</span>
+          <div class="article-tags">
+            <span class="article-tag">Mangrove Pesisir</span>
+          </div>
+        </div>
+        <p class="article-body">Hutan mangrove adalah ekosistem unik yang tumbuh di zona pasang surut pesisir tropis dan subtropis. Dengan sistem akar yang khas—akar tunjang dan akar napas—mangrove mampu bertahan di tanah berlumpur dengan kadar garam tinggi dan kekurangan oksigen. Hutan ini berfungsi sebagai pelindung alami pantai dari erosi, badai, dan tsunami, meredam gelombang dan menstabilkan garis pantai. Mangrove juga berperan sebagai nursery bagi ribuan spesies ikan, udang, dan kepiting, menyediakan tempat berlindung dan makanan yang melimpah. Ekosistem ini menyimpan karbon lima kali lebih banyak daripada hutan tropis daratan, menjadikannya penting dalam mitigasi perubahan iklim global.</p>
+      </div>
+
+      <hr class="divider" style="display: none;">
+
+      <div class="article-item rafflesia-langka">
+        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600&h=400&fit=crop" alt="Bunga Rafflesia yang besar dan eksotis" class="article-image">
+        <h2 class="article-title">Rafflesia Arnoldii: Bunga Terbesar dan Paling Misterius di Dunia</h2>
+        <div class="article-meta">
+          <span class="article-date">📅 14 Oktober 2025</span>
+          <div class="article-tags">
+            <span class="article-tag">Rafflesia Langka</span>
+          </div>
+        </div>
+        <p class="article-body">Rafflesia arnoldii adalah bunga tunggal terbesar di dunia, dengan diameter mencapai satu meter dan berat hingga 11 kilogram. Bunga endemik Sumatra dan Kalimantan ini dikenal dengan julukan "bunga bangkai" karena mengeluarkan bau busuk menyerupai daging membusuk untuk menarik lalat sebagai penyerbuk. Rafflesia adalah parasit obligat yang hidup dengan menempel pada akar tanaman inang dari genus Tetrastigma. Tidak memiliki daun, batang, atau akar sendiri, Rafflesia sepenuhnya bergantung pada inangnya untuk nutrisi. Bunga ini mekar hanya selama lima hingga tujuh hari sebelum layu dan mati. Kelangkaan dan kesulitan perkembangbiakannya membuat Rafflesia menjadi spesies yang terancam punah, memerlukan upaya konservasi serius untuk memastikan kelangsungan hidupnya di alam liar.</p>
+      </div>
+
+      <hr class="divider" style="display: none;">
+
+      <div class="article-item venus-flytrap">
+        <img src="https://images.unsplash.com/photo-1628711905143-77ea60853caa?w=600&h=400&fit=crop" alt="Tanaman Venus Flytrap yang unik" class="article-image">
+        <h2 class="article-title">Venus Flytrap: Tanaman Karnivora yang Menakjubkan</h2>
+        <div class="article-meta">
+          <span class="article-date">📅 13 Oktober 2025</span>
+          <div class="article-tags">
+            <span class="article-tag">Venus Flytrap</span>
+          </div>
+        </div>
+        <p class="article-body">Venus flytrap (Dionaea muscipula) adalah salah satu tanaman karnivora paling terkenal dan menakjubkan di dunia. Endemik di rawa-rawa Carolina Utara dan Selatan, tanaman ini telah mengembangkan mekanisme perangkap yang sangat canggih untuk menangkap serangga. Daunnya yang berbentuk seperti mulut dengan gigi-gigi kecil di tepinya dilengkapi dengan rambut sensorik yang sangat sensitif. Ketika serangga menyentuh rambut ini dua kali dalam waktu 20 detik, perangkap akan menutup dengan kecepatan luar biasa—hanya dalam sepersepuluh detik. Ini adalah salah satu gerakan tercepat dalam kerajaan tumbuhan. Setelah tertangkap, serangga akan dicerna menggunakan enzim selama lima hingga dua belas hari, memberikan nitrogen dan nutrisi lain yang sulit diperoleh dari tanah rawa yang miskin hara. Venus flytrap adalah contoh sempurna dari evolusi adaptif, di mana tanaman mengembangkan strategi unik untuk bertahan hidup di lingkungan yang ekstrem.</p>
+      </div>
+    </section>
+  </div>
+</div>
+
+  <div class="footer-container">
+    <div class="tag-and-search-wrapper">
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Cari artikel...">
+        </div>
+        <nav class="tag-navigation" id="tagNavigation">
+            <!-- Tags will be generated dynamically -->
+        </nav>
+    </div>
+    <nav class="post-navigation">
+        <a href="#" id="prevBtn" class="nav-link disabled">« Sebelumnya</a>
+        <a href="#" id="nextBtn" class="nav-link">Selanjutnya »</a>
+    </nav>
+    <hr class="divider">
+    <footer>
+      <a href="mailto:sekelebat01@gmail.com">Email</a> | 
+      <a href="https://sekestore.netlify.app" target="_blank">Store</a> | 
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </footer>
+  </div>
+</div>
+
+<script>
+  const sections = ["Visual", "Nature", "Earth", "SEKELabs"];
+  const textElement = document.getElementById("text");
+  const toggleIcon = document.getElementById("toggleIcon");
+  let sectionIndex = 0;
+  let charIndex = 0;
+
+  function type() {
+    const currentText = sections[sectionIndex];
+    if (charIndex < currentText.length) {
+      textElement.textContent += currentText.charAt(charIndex);
+      charIndex++;
+      setTimeout(type, 150);
+    } else {
+      setTimeout(() => {
+        textElement.textContent = '';
+        charIndex = 0;
+        sectionIndex = (sectionIndex + 1) % sections.length;
+        type();
+      }, 1000);
+    }
+  }
+
+  type();
+
+  toggleIcon.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+
+  const articles = document.querySelectorAll('.article-item');
+  const dividers = document.querySelectorAll('.article-section .divider');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const searchInput = document.getElementById('searchInput');
+  const tagNavigation = document.getElementById('tagNavigation');
+  let currentArticleIndex = 0;
+  let filteredArticles = Array.from(articles);
+
+  // Generate dynamic tags from articles - 100% DINAMIC
+  function generateTags() {
+    const tagsSet = new Set();
+
+    // tak all class from artikel (except 'article-item')
+    articles.forEach(article => {
+      const classes = article.className.split(' ');
+      classes.forEach(cls => {
+        if (cls !== 'article-item' && cls.trim() !== '') {
+          tagsSet.add(cls.trim());
+        }
+      });
+    });
+
+    // Create "All" tag
+    const allTag = document.createElement('a');
+    allTag.href = '#';
+    allTag.className = 'tag-item active';
+    allTag.dataset.tag = 'all';
+    allTag.textContent = 'All';
+    tagNavigation.appendChild(allTag);
+
+    // Create tags from article OTOMATIC
+    // Capitalize and format name tag
+    tagsSet.forEach(tag => {
+      const tagItem = document.createElement('a');
+      tagItem.href = '#';
+      tagItem.className = 'tag-item';
+      tagItem.dataset.tag = tag;
+
+      tagItem.textContent = tag.split('-').map(word => {
+        // if all uppercase (like UI, UX), let it be uppercase
+        if (word === word.toUpperCase() && word.length <= 3) {
+          return word.toUpperCase();
+        }
+        // Capitalize first letter
+        return word.charAt(0).toUpperCase() + word.slice(1);
+      }).join(' ');
+
+      tagNavigation.appendChild(tagItem);
+    });
+
+    // Add click events to tags
+    const tagItems = document.querySelectorAll('.tag-item');
+    tagItems.forEach(item => {
+      item.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        // Remove active class from all tag
+        tagItems.forEach(tag => tag.classList.remove('active'));
+
+        // Add active class to tag 
+        e.target.classList.add('active');
+
+        const tag = e.target.dataset.tag;
